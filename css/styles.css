@@ -1,15 +1,184 @@
-body { 
-font-family: Arial, sans-serif; 
-background-color: #f4f7fb; 
-color: #243247; 
-max-width: 900px; 
-margin: 0 auto;
-padding: 24px; 
-line-height: 1.6; 
-} 
-h1 { 
-} 
-h2 { 
-} 
-color: #123c69; 
-color: #24527a;
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a080d;
+    color: #f5e6e8;
+    line-height: 1.7;
+}
+
+/* HEADER */
+header {
+    padding: 25px 8%;
+    background-color: #250b13;
+    border-bottom: 1px solid #a66b78;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: #d9a0aa;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li {
+    cursor: pointer;
+    color: #f5e6e8;
+    transition: 0.3s;
+}
+
+nav ul li:hover {
+    color: #d9a0aa;
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 8%;
+    background: linear-gradient(135deg, #1a080d, #451624);
+}
+
+.hero h1 {
+    font-size: 55px;
+    color: #f5d6dc;
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    color: #d9a0aa;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.hero p {
+    max-width: 600px;
+    line-height: 1.8;
+    color: #eadadd;
+}
+
+/* BUTTON */
+button {
+    width: 160px;
+    padding: 14px;
+    margin-top: 25px;
+    background-color: #bd8491;
+    color: #250b13;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #f0c4ce;
+    transform: translateY(-3px);
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 80px 8%;
+    background-color: #250b13;
+}
+
+.about h2 {
+    color: #d9a0aa;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.about p {
+    max-width: 700px;
+    line-height: 1.8;
+    color: #eadadd;
+}
+
+/* SKILLS SECTION */
+.skills {
+    padding: 80px 8%;
+    background-color: #32121d;
+}
+
+.skills h2 {
+    color: #d9a0aa;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+/* UPCOMING ACTIVITIES */
+.activities {
+    padding: 80px 8%;
+    background-color: #250b13;
+}
+
+.activities h2 {
+    color: #d9a0aa;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.activities ul {
+    padding-left: 25px;
+    color: #eadadd;
+}
+
+.activities li {
+    margin-bottom: 12px;
+}
+
+/* FOOTER */
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #120509;
+    color: #d9a0aa;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 23px;
+    }
+
+    .about,
+    .skills,
+    .activities {
+        padding: 50px 6%;
+    }
+}
